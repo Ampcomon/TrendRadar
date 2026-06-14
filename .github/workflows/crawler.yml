@@ -166,7 +166,7 @@ jobs:
           S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           S3_ENDPOINT_URL: ${{ secrets.S3_ENDPOINT_URL }}
 
-- name: Commit and push changes  # 👈 第二处修改：新增的保存并推送步骤
+  - name: Commit and push changes  # 👈 第二处修改：新增的保存并推送步骤
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
